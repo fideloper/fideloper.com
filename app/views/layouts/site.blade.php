@@ -40,6 +40,7 @@
         <section>
             @yield('content')
             <aside>
+                <a href="https://twitter.com/fideloper" class="twitter-follow-button" data-show-count="true">Follow @fideloper</a>
                 @section('sidebar')
                 @show
             </aside>
