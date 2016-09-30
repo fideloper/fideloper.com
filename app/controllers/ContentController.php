@@ -159,7 +159,7 @@ class ContentController extends BaseController {
 
 			if($kind === 'full')
 			{
-				$item->description( $article->content );
+				$item->description( \Michelf\MarkdownExtra::defaultTransform($article->content) );
 			} else {
 				$item->description( $article->excerpt );
 			}
